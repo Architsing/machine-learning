@@ -40,7 +40,6 @@ The **actual Profit** was compared with the **predicted Profit**, and the predic
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
 - Scikit-learn
 - Google Colab
 

@@ -19,10 +19,10 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
 
-    model = joblib.load("linear_regression_model.pkl")
-
-    feature_columns = joblib.load("feature_columns.pkl")
-
+    import os
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    model = joblib.load(os.path.join(BASE_DIR, "linear_regression_model.pkl"))
+    feature_columns = joblib.load(os.path.join(BASE_DIR, "feature_columns.pkl"))
     return model, feature_columns
 
 
